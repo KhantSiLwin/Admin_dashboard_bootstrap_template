@@ -1,0 +1,188 @@
+
+:root{
+     
+    --primary-soft: #e9e9e9;
+    --dark: #000000;
+    --primary:#007bff;
+}
+
+.nav-menu{
+
+    
+}
+
+.nav-brand{
+
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.nav-menu ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-title{
+
+    padding: 10px 0;
+    color: #949494;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-item{
+
+    transition: 0.3s;    
+}
+
+.menu-item:hover{
+
+    background-color: #e7e7e7;
+    border-radius: 0.25rem;
+}
+
+.menu-item-link{
+
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark);
+    padding: 10px;
+        border-radius: 0.25rem;
+}
+
+.menu-item-link.active{
+
+    background-color:var(--primary);
+    color:white !important;
+}
+
+.menu-item-link:hover{
+
+    text-decoration:none;
+    color: var(--dark);
+}
+ 
+.menu-item-link span{
+
+
+}
+
+.menu-item-link i{
+
+
+}
+
+.menu-spacer{
+
+   padding: 10px 0px;
+}
+
+.content{
+
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75) inset;
+}
+
+.header{
+
+    position: sticky;
+    top: 0.2rem;
+    z-index: 100;
+}
+
+.sidebar{
+
+    height: 100vh;
+    overflow: scroll;
+
+}
+
+
+
+.show-sidebar-button{
+
+    cursor: pointer;
+}
+
+.user-img{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card{
+
+    border: none;
+}
+
+.status-card{
+
+    transition:  0.3s;
+}
+
+.status-card:hover{
+
+ transform: translateY(-5px);
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.status-card:active{
+
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.ov-image{
+
+    margin-left: -25px;
+}
+
+.item-courosel{
+ 
+    margin-top: -100px;
+}
+
+.item-card-img{
+
+    height: 200px;
+}
+
+.sub-list{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sub-list tr:active{
+
+    transform: scale(1.02);
+}
+
+.full-screen-card{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2005;
+    height: 100vh;
+    overflow: scroll;
+}
+
+@media screen and (max-width:780px){
+
+    .sidebar{
+
+        position: fixed;
+        width: 300px;
+        z-index: 9001;
+        display: block !important;
+        background-color: #ffffffc9;
+        backdrop-filter: blur(5px);
+        margin-left: -100%;
+    }
+}
